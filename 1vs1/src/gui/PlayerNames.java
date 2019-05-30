@@ -19,6 +19,7 @@ public class PlayerNames extends javax.swing.JFrame {
      */
     public PlayerNames() {
         initComponents();
+        setResizable(false);
     }
 
     /**
@@ -37,13 +38,19 @@ public class PlayerNames extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 0));
 
+        jTextField1.setBackground(new java.awt.Color(19, 23, 25));
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("player1");
 
+        jTextField2.setBackground(new java.awt.Color(19, 23, 25));
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
         jTextField2.setText("player2");
 
-        jButton1.setText("start");
+        jButton1.setBackground(new java.awt.Color(19, 23, 25));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("start match");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -62,7 +69,7 @@ public class PlayerNames extends javax.swing.JFrame {
                             .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
                             .addComponent(jTextField2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(105, 105, 105)
+                        .addGap(95, 95, 95)
                         .addComponent(jButton1)))
                 .addContainerGap(96, Short.MAX_VALUE))
         );
@@ -73,9 +80,9 @@ public class PlayerNames extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(70, 70, 70)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addGap(38, 38, 38)
                 .addComponent(jButton1)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -87,7 +94,7 @@ public class PlayerNames extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
