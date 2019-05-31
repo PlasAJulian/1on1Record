@@ -130,6 +130,7 @@ public class PlayerTb extends javax.swing.JFrame {
             i.jLabel3.setText(model.getValueAt(index, 2).toString());
             //player2 score
             i.jLabel4.setText(model.getValueAt(index, 4).toString());
+            i.checkWinner();
             i.setResizable(false);
             i.show();
          }
