@@ -19,6 +19,7 @@ public int id;
      */
     public playerScore() {
         initComponents();
+        setDefaultCloseOperation(playerScore.DISPOSE_ON_CLOSE);
         //setResizable(false);
     }
     public void checkWinner(){

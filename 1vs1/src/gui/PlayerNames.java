@@ -19,6 +19,7 @@ public class PlayerNames extends javax.swing.JFrame {
     public PlayerNames() {
         initComponents();
         setResizable(false);
+        setDefaultCloseOperation(PlayerNames.DISPOSE_ON_CLOSE);
     }
 
     /**
